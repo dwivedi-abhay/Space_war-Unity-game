@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Music_Player : MonoBehaviour
+public class SceneLoader : MonoBehaviour
 {
-
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
     // Start is called before the first frame update
     void Start()
     {
-        
+
         Invoke("PlayMainScreen", 2f);
     }
 
